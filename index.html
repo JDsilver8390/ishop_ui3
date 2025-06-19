@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0"/>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="robots" content="None, Noimageindex,Noarchive">
+  <title>遠時i開店頁面UI</title>
+  <!-- browser thumbnail -->
+  <link rel="shortcut icon" href="img/joy.png">
+  <link rel="apple-touch-icon" href="img/joy.png">
+  <!-- framework css -->
+  <link rel="stylesheet" href="css/uikit.css">
+  <link rel="stylesheet" href="css/page.css">
+</head>
+
+<body>
+
+  <!-- loading spinner -->
+  <figure id="loading">
+    <div uk-spinner></div>
+    <div style="margin-left: 5px">加載中請等等</div>
+  </figure>
+
+  <main class="uk-display-inline-block" uk-overflow-auto>
+
+    <img src="img/SHimg.png" alt="" style="position:absolute; left:-9999px;">
+
+    <img src="img/UI_img.png" alt="" style="width: 100%;">
+
+  </main>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/uikit.js"></script>
+
+  <script>
+    //loading時間限制
+    $(document).ready(function(){
+      setTimeout( function(){ $('#loading').fadeOut(); },1000)
+    });
+  </script>
+
+</body>
+
+</html>

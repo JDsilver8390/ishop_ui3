@@ -1,0 +1,203 @@
+/* all */
+html,body{
+  width: 100vw;
+}
+a svg{
+  vertical-align: text-bottom;
+  width: 1rem;height: 1rem;
+}
+.uk-button{
+  border-radius: 99px;
+}
+.uk-button-primary{
+  background-color: #2e89c6;
+  border: 2px solid #fff;
+}
+.uk-button-primary:hover{
+  background-color: #21699A;
+}
+.uk-button-text{
+  color:#2e89c6;
+}
+.uk-button-text:hover{
+  color:#21699A;
+}
+.bu1{
+  color:#002641;
+}
+.bu2{
+  color:#003A63;
+}
+.bu3{
+  color:#21699A;
+}
+.bu4{
+  color:#2e89c6;
+}
+article{
+  background-color: #002641;
+}
+.icons img{
+  padding: 5px;
+}
+
+/* main */
+main{
+  height: 100vh;width: 100vw;
+  background-color:#F5F5F5;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+.uk-card-media-right::after,
+.uk-card-media-left::after{
+  content: "";position: absolute;
+  z-index: 1;
+  width: 0px;height: 0px;
+  border-style: solid;
+}
+.uk-card-media-right::after{
+  left: -50px;top: 0;
+  border-width: 1000px 100px 0 0;
+  border-color: #F5F5F5 transparent transparent #F5F5F5 ;
+}
+.uk-card-media-left::after{
+  right: -50px;border-width: 0 0 1000px 100px;bottom: 0;
+  border-color: transparent #F5F5F5 #F5F5F5 transparent ;
+}
+.text_Left,.text_Right{
+  position: relative;z-index: 0;
+}
+.text_Right::after,
+.text_Left::after{
+  content: "";position: absolute;
+  width: 30%;height: 100%;z-index: -1;
+  background-color: #EDF3F8;
+  top:0;
+}
+.text_Right::after{
+  right:0;
+}
+.text_Left::after{
+  left:0;
+}
+.bu3 strong{color: #003A63;}
+li span{
+  background-color: #21699A;
+  color: #fff;
+  padding: 2px 10px;
+  border-radius: 6px;
+  border: 1px solid #fff;
+  word-break: keep-all;
+}
+li span.bgw{
+  background-color: #fff;
+  color: #21699A;
+  border: 1px solid #21699A;
+}
+
+.file a{
+  text-align: left;width: max-content;
+}
+
+
+/* footer */
+footer{
+  background-color: #003A63;
+}
+
+/*btn animation ===========================*/
+.iconRight,
+.btnIconMove:hover span,
+.btnIconMove:hover svg{
+  -webkit-animation-name: move-right;
+          animation-name: move-right;
+  -webkit-animation: move-right .6s linear infinite;
+  -moz-animation: move-right .6s linear infinite;
+  -ms-animation: move-right .6s linear infinite;
+  -o-animation: move-right .6s linear infinite;
+}
+@-webkit-keyframes move-right {
+  0% {
+    opacity: 1;
+    transform: translateX(-5px);
+    -ms-transform: translateX(-5px);
+    -webkit-transform: translateX(-5px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+  }
+}
+@keyframes move-right {
+  0% {
+    opacity: 1;
+    transform: translateX(-5px);
+    -ms-transform: translateX(-5px);
+    -webkit-transform: translateX(-5px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+  }
+}
+.btnRotate:hover{
+  -webkit-animation: btnRotate .3s linear;
+          animation: btnRotate .3s linear;
+}
+@-webkit-keyframes btnRotate {
+  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+  100% {-webkit-transform: rotate(270deg);transform: rotate(270deg);}
+}
+@keyframes btnRotate {
+  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+  100% {-webkit-transform: rotate(270deg);transform: rotate(270deg);}
+}
+
+
+/* loading Spinner ===================*/
+#loading {
+  background-color:rgba(255, 255, 255, 0.8);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 10200;
+  color:#e37a21;
+}
+
+
+@media screen and (min-width: 1520px){
+  br{display: none;}
+}
+@media screen and (max-width: 1400px){
+  .start{display: block;}
+}
+@media screen and (max-width: 1199px){
+  .text_Right::after{right:auto;left: 0;}
+}
+@media screen and (max-width: 1050px){
+  aside,main{width: 50%;}
+}
+@media screen and (max-width: 800px){
+  aside,main{width: 100%;height: auto;position: relative;}
+  .start{display: flex;}
+}
+
+@media screen and (max-width:470px){
+  .start{display: block;}
+}
+
