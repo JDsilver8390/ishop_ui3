@@ -189,9 +189,6 @@ footer{
 @media screen and (max-width: 1199px){
   .text_Right::after{right:auto;left: 0;}
 }
-@media screen and (max-width: 1050px){
-  aside,main{width: 50%;}
-}
 @media screen and (max-width: 800px){
   aside,main{width: 100%;height: auto;position: relative;}
   .start{display: flex;}
